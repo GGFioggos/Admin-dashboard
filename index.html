@@ -1,33 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="sidebar">
-        <div>Dashboard</div>
-        <ul>
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>History</li>
-          <li>Tasks</li>
-          <li>Communities</li>
-        </ul>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div>Dashboard</div>
+      <ul>
+        <li>Home</li>
+        <li>Profile</li>
+        <li>Messages</li>
+        <li>History</li>
+        <li>Tasks</li>
+        <li>Communities</li>
+      </ul>
+
+      <ul>
+        <li>Settings</li>
+        <li>Support</li>
+        <li>Privacy</li>
+      </ul>
+    </div>
+    <div class="header">
+      <div class="header-first-line">
+        <img id="header-search-icon" src="images/magnify.png"></img>
+        <label for="search-bar"></label>
+        <input type="text" id="search-bar" />
         <ul>
-          <li>Settings</li>
-          <li>Support</li>
-          <li>Privacy</li>
+          <li><img id="header-notification-icon" src="images/notification.png"></img> </li>
+          <li><img class="header-profile-picture" src="images/profile-pic.png"></img></li>
+          <li>
+            <div class="header-profile-name">Morgan Oakley</div>
+          </li>
         </ul>
       </div>
-      <div class="header"></div>
-      <div class="content"></div>
+      <div class="header-second-line">
+        <div class="left-side">
+          <img class="header-profile-picture" src="images/profile-pic.png"></img>
+          <div class="welcome-profile">
+            <div class="header-welcome-message">Hi there,</div>
+            <div class="header-full-profile-name">Morgan Oakley (@morgan)</div>
+          </div>
+        </div>
+        <ul class="header-buttons">
+          <li><div class="header-new-button">New</div></li>
+          <li><div class="header-upload-button">Upload</div></li>
+          <li><div class="header-share-button">Share</div></li>
+        </ul>
+      </div>
     </div>
-  </body>
+    <div class="content"></div>
+  </div>
+</body>
+
 </html>
