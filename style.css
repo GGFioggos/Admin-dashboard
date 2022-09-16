@@ -17,6 +17,9 @@ html,body {
 ul {
     padding: 0;
     list-style: none;
+}
+
+li {
     cursor: pointer;
 }
 
@@ -245,11 +248,12 @@ ul {
 .announcements {
     background-color: var(--background-color-gray);
     display: grid;
-    grid-template-rows: 50px 1fr 50px 1fr;
+    grid-template-rows: 50px min-content 50px min-content;
     padding-inline: 15px;
 }
 
 .important {
+    display: inline-block;
     margin-top: 25px;
     font-size: 0.9rem;
     border-radius: 16px;
@@ -281,6 +285,8 @@ ul {
 .announcements .trending {
     background-color: white;
     border-radius: 16px;
+    box-shadow: 3px 3px 3px rgb(175 175 175);
+
 }
 
 .trending-list{
