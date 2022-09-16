@@ -2,12 +2,13 @@
     --dark-blue: #075985;
     --light-blue: #0284c7;
     --cyan-blue: #38bdf8;
-    --background-color-gray: rgba(201, 201, 201, 0.578);
+    --background-color-gray: rgba(229, 229, 229, 0.578);
     --general-text-color: rgba(2, 2, 2, 0.634);
+    --font-family: 'roboto', 'sans-serif';
 }
 
 html,body {
-    font-family: 'roboto', 'sans-serif';
+    font-family: var(--font-family);
     background-color: var(--background-color-gray);
     margin:0;
     padding: 0;
@@ -249,20 +250,66 @@ ul {
 }
 
 .important {
+    margin-top: 25px;
     font-size: 0.9rem;
-    border: 1px solid black;
     border-radius: 16px;
+    background-color: white;
     color: var(--general-text-color);
+    box-shadow: 3px 3px 3px rgb(175 175 175);
+}
+
+.important .announcement {
+    padding-left: 50px;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.56);
+
 }
 
 .important .title {
     font-size: 1.1rem;
     color: black;
+    margin-top: 20px;
 }
 
+.important .content {
+    margin-top: -10px;
+}
 
+#trending-title {
+    margin-top: 15px;
+}
+
+.announcements .trending {
+    background-color: white;
+    border-radius: 16px;
+}
+
+.trending-list{
+    cursor: default;
+}
+
+.trending-list li{
+    margin-left: 45px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+.trending .description,
+.trending .at-name{
+    font-size: 0.9rem;
+}
+
+.at-name {
+    cursor: pointer;
+}
+
+.trending .description{
+    color: var(--general-text-color);
+}
 
 .announcements img {
-    width: 10px;
-    height: 10px;
+    width: 50px;
+    height: 50px;
+    
 }
