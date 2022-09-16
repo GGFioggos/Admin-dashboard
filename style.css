@@ -4,13 +4,14 @@
     --cyan-blue: #38bdf8;
     --background-color-gray: rgba(224, 224, 224, 0.483);
     --general-text-color: rgba(2, 2, 2, 0.634);
-    --font-family: 'roboto', 'sans-serif';
+    --font-family: "roboto", "sans-serif";
 }
 
-html,body {
+html,
+body {
     font-family: var(--font-family);
     background-color: var(--background-color-gray);
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
@@ -54,7 +55,7 @@ li {
     margin-bottom: 15px;
 }
 
-.sidebar ul img{
+.sidebar ul img {
     margin-left: 15px;
     margin-right: 25px;
     height: 25px;
@@ -66,7 +67,7 @@ li {
     margin-right: 5px;
     height: 60px;
     width: 60px;
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
 /* HEADER GENERAL */
@@ -78,7 +79,6 @@ li {
     grid-template-rows: 60px 60px;
     box-shadow: 0px 2px 3px rgb(175 175 175);
 }
-
 
 /* HEADER FIRST LINE */
 
@@ -120,14 +120,13 @@ li {
     font-weight: bold;
 }
 
-.header-first-line ul{
+.header-first-line ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1vw;
     margin-inline: 3vw;
 }
-
 
 /* HEADER SECOND LINE */
 
@@ -145,7 +144,7 @@ li {
     width: 60px;
 }
 
-.header-second-line ul{
+.header-second-line ul {
     display: flex;
     flex-direction: row;
     gap: 2vw;
@@ -153,7 +152,7 @@ li {
     flex-wrap: wrap;
 }
 
-.header-second-line .header-buttons li{
+.header-second-line .header-buttons li {
     color: white;
     border-radius: 50px;
     font-size: 1.2rem;
@@ -163,7 +162,7 @@ li {
 }
 
 .left-side {
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
@@ -192,14 +191,14 @@ li {
 
 /* PROJECTS */
 
-.project{
+.project {
     grid-column: 1/-1;
 }
 
 .projects {
     background-color: var(--background-color-gray);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 50px;
     grid-auto-rows: 250px;
     gap: 25px;
@@ -214,7 +213,7 @@ li {
 }
 
 .card .title,
-.card .card-content{
+.card .card-content {
     margin-inline: 15px;
     text-align: left;
 }
@@ -230,11 +229,10 @@ li {
     color: var(--general-text-color);
 }
 
-
 .card ul {
     display: flex;
     margin-inline-end: 25px;
-    gap: 25px;   
+    gap: 25px;
     justify-content: end;
 }
 
@@ -265,7 +263,6 @@ li {
 .important .announcement {
     padding-left: 50px;
     border-bottom: 1px solid rgba(187, 187, 187, 0.56);
-
 }
 
 .important .title {
@@ -288,14 +285,13 @@ li {
     background-color: white;
     border-radius: 16px;
     box-shadow: 3px 3px 3px rgb(175 175 175);
-
 }
 
-.trending-list{
+.trending-list {
     cursor: default;
 }
 
-.trending-list li{
+.trending-list li {
     margin-left: 45px;
     margin-bottom: 15px;
     display: flex;
@@ -303,8 +299,9 @@ li {
     gap: 12px;
     align-items: center;
 }
+
 .trending .description,
-.trending .at-name{
+.trending .at-name {
     font-size: 0.9rem;
 }
 
@@ -312,7 +309,7 @@ li {
     cursor: pointer;
 }
 
-.trending .description{
+.trending .description {
     color: var(--general-text-color);
 }
 
